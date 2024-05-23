@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class ArrayToCsv {
+  public static String toCsvText(int[][] array){
+    StringBuilder result = new StringBuilder();
+    
+    for (int i = 0; i < array.length; i++) {
+      String line = Arrays.toString(array[i]).replace("[", "").replace("]", "").replace(" ", "");
+      if (i != array.length - 1) {
+        result.append( line + "\n");
+      } else {
+        result.append(line);
+      }
+      
+    }
+    
+    return result.toString();
+  }
+}
