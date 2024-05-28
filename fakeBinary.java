@@ -13,4 +13,8 @@ public class FakeBinary {
         }
         return result.toString();
     }
+
+    public static String fakeBin2(String numberString) {
+        return numberString.replaceAll("[0-4]", "0").replaceAll("[5-9]", "1");
+    }
 }
