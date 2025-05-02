@@ -1,6 +1,4 @@
-def fibonacci():
-  x = 4
-  num = 1
+def fibonacci(x):
   result = []
   
   if x <= 2:
